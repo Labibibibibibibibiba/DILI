@@ -1,18 +1,11 @@
 #!/usr/bin/env python3
+"""Figure 2 — CORRECTED COPY of D:/DILI/code/fig2_interpretation.py.
+
+Changes vs the original (2026-10-09):
+  1. Panel C colouring: each marker now uses its own row's Significant flag
+     (original looked it up by fingerprint and mis-coloured FP_698 Cc grey).
+  2. Output redirected to D:/DILI_1/figures_regen (D:/DILI is read-only).
 """
-Figure 2 — Interpretation of the RF model (avoiding the black box).
-
-布局：双栏宽 183 mm，2×2 网格
-  A（左上，宽）：SHAP beeswarm（连续特征 viridis，FP 二值特征 灰/橘红双色）
-  B（右上，窄）：Feature importance（mean |SHAP| Top 20）
-  C（左下，宽）：**子结构级**富集森林图（OR + 95% CI；FDR 取自全指纹空间 n=809 族）
-  D（右下，窄）：Acitretin 结构 + FP_367 片段高亮（RDKit）
-
-数据源（全部为 v2 重算产物）：
-  shap_values_556_v2.npy / shap_feature_names_v2.json / shap_importance_v2.xlsx
-  enrichment_fullfamily_bitidentity.xlsx
-"""
-
 import sys
 sys.path.insert(0, r"D:/abraca")
 import plot_utils as pu
@@ -130,11 +123,15 @@ print("Panel C 子结构数:", len(sel))
 print(sel[["label", "Count", "OddsRatio", "OR_CI_low", "OR_CI_high", "FDR", "Significant"]].to_string(index=False))
 
 ypos = np.arange(len(sel))
+# Colour each marker by its OWN significance flag. An earlier version looked the
+# flag up by fingerprint; after the iloc[::-1] reversal that returned the first
+# *remaining* row for duplicated bits, so FP_698 Cc (OR 3.68, FDR 0.0029, significant)
+# was drawn in the non-significant grey. Fixed 2026-10-09.
 cols = []
-for fp in sel["Fingerprint"]:
-    if fp == "FP_367":
+for _, row in sel.iterrows():
+    if row["Fingerprint"] == "FP_367":
         cols.append(pu.OKABE_ITO["vermillion"])
-    elif sel.loc[sel["Fingerprint"] == fp, "Significant"].iloc[0]:
+    elif bool(row["Significant"]):
         cols.append(pu.OKABE_ITO["blue"])
     else:
         cols.append("#B4B2A9")
@@ -191,7 +188,7 @@ axD.set_title("Acitretin: FP_367 (cc(c)C)", fontsize=6.5)
 pu.label_panel(axD, "D", y=1.25)
 
 # =============================================================================
-pu.save_figure(fig, r"D:/DILI/result/new_figure/Figure2", formats=("pdf", "png"),
+pu.save_figure(fig, r"D:/DILI_1/figures_regen/Figure2", formats=("pdf", "png"),
                dpi=600, tight=False)
 plt.close(fig)
 print("Figure2 完成")

@@ -306,9 +306,11 @@ ROLE_ORDER = ["SMX", "CPZ", "CAB", "MBZ", "OXY", "TOL", "MET"]
 NAME = {"CPZ": "Chlorpromazine", "SMX": "Sulfamethizole", "CAB": "Cabotegravir",
         "MBZ": "Mebendazole", "OXY": "Oxybutynin", "TOL": "Tolterodine",
         "MET": "Metformin"}
-ROLE_COL = {"SMX": OI["vermillion"], "CPZ": OI["vermillion"], "CAB": OI["vermillion"],
-            "MBZ": OI["vermillion"], "OXY": OI["bluish_green"],
-            "TOL": OI["bluish_green"], "MET": OI["bluish_green"]}
+# Three-way taxonomy, palette matched to Figure 3 panel D (S15_fig3_robustness.py):
+# positive (in-pool) bridge / high-risk candidate / negative control.
+ROLE_COL = {"CPZ": OI["vermillion"],
+            "SMX": OI["orange"], "CAB": OI["orange"], "MBZ": OI["orange"],
+            "OXY": OI["blue"], "TOL": OI["blue"], "MET": OI["blue"]}
 ROLE_MK = {"SMX": "o", "CPZ": "D", "CAB": "s", "MBZ": "^",
            "OXY": "o", "TOL": "D", "MET": "s"}
 s11 = s11.set_index("drug").loc[ROLE_ORDER].reset_index()
@@ -331,8 +333,9 @@ ax.set_title("Figure S6. Rank stability of the validation panel\n"
              fontsize=8.8)
 from matplotlib.lines import Line2D
 ax.legend(handles=[
-    Line2D([], [], marker="o", color=OI["vermillion"], ls="", label="high-risk candidate"),
-    Line2D([], [], marker="o", color=OI["bluish_green"], ls="", label="negative control"),
+    Line2D([], [], marker="o", color=OI["vermillion"], ls="", label="positive bridge"),
+    Line2D([], [], marker="o", color=OI["orange"], ls="", label="high-risk candidate"),
+    Line2D([], [], marker="o", color=OI["blue"], ls="", label="negative control"),
     Line2D([], [], color="0.5", lw=2.0, alpha=0.6, label="min\u2013max range")],
     fontsize=6.4, loc="lower left", bbox_to_anchor=(1.01, 0.0))
 pu.save_figure(fig, FIG / "FigS6_rank_stability", formats=("pdf", "png"), dpi=600)
