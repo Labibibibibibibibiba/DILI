@@ -64,7 +64,7 @@ fig, axes = plt.subplots(1, 2, figsize=pu.figsize(pu.DOUBLE_COL_MM, height_mm=92
                          layout="constrained")
 
 ax = axes[0]
-im = ax.imshow(sp.values, cmap="RdBu_r", vmin=-1, vmax=1, aspect="equal")
+im = ax.imshow(sp.values, cmap="RdBu_r", vmin=-1, vmax=1, aspect="auto")
 ax.set_xticks(range(len(lbl))); ax.set_xticklabels(lbl, rotation=45, ha="right", fontsize=6.5)
 ax.set_yticks(range(len(lbl))); ax.set_yticklabels(lbl, fontsize=6.5)
 for i in range(len(sp)):
@@ -73,12 +73,12 @@ for i in range(len(sp)):
         ax.text(j, i, f"{v:.2f}", ha="center", va="center", fontsize=5.6,
                 color="white" if abs(v) > 0.55 else "black")
 ax.set_title("Spearman rank correlation", fontsize=8)
-cb = fig.colorbar(im, ax=ax, shrink=0.72, pad=0.02)
+cb = fig.colorbar(im, ax=ax, shrink=1.0, pad=0.02)
 cb.set_label("Spearman $\\rho$", fontsize=7); cb.ax.tick_params(labelsize=6)
 pu.label_panel(ax, "A")
 
 ax = axes[1]
-im = ax.imshow(jac.values, cmap="Blues", vmin=0, vmax=1, aspect="equal")
+im = ax.imshow(jac.values, cmap="Blues", vmin=0, vmax=1, aspect="auto")
 ax.set_xticks(range(len(lbl))); ax.set_xticklabels(lbl, rotation=45, ha="right", fontsize=6.5)
 ax.set_yticks(range(len(lbl))); ax.set_yticklabels(lbl, fontsize=6.5)
 for i in range(len(jac)):
@@ -87,12 +87,10 @@ for i in range(len(jac)):
         ax.text(j, i, f"{v:.2f}", ha="center", va="center", fontsize=5.6,
                 color="white" if v > 0.55 else "black")
 ax.set_title("Top-10% set overlap (Jaccard)", fontsize=8)
-cb = fig.colorbar(im, ax=ax, shrink=0.72, pad=0.02)
+cb = fig.colorbar(im, ax=ax, shrink=1.0, pad=0.02)
 cb.set_label("Jaccard index", fontsize=7); cb.ax.tick_params(labelsize=6)
 pu.label_panel(ax, "B")
 
-fig.suptitle("Figure S1. Cross-model rank agreement on the 659 uncategorised compounds",
-             fontsize=9)
 pu.save_figure(fig, FIG / "FigS1_rank_agreement", formats=("pdf", "png"), dpi=600)
 plt.close(fig)
 P("[S1] FigS1_rank_agreement")
@@ -135,8 +133,6 @@ for b, v, hi in zip(bars, cmp_df["auc_mean"], cmp_df["ci_hi"]):
 ax.set_xticks(x); ax.set_xticklabels([NICE[s] for s in cmp_df["feature_set"]], fontsize=6.6)
 ax.set_ylabel("5-fold CV AUROC (L1, RF)")
 ax.set_ylim(0.55, 0.94)
-ax.set_title("Figure S2. Descriptor-space comparison:\nthree-dimensional features give no gain",
-             fontsize=9.0)
 pu.label_panel(ax, "A", x=-0.10)
 ax.text(0.02, 0.97,
         "$\\Delta$AUROC (F5 $-$ F3) = $-$0.015\n95% CI [$-$0.024, $-$0.005]",
@@ -209,8 +205,6 @@ ax.annotate("HIGH\n($\\geq$6 votes)", xy=(6, 40), xytext=(4.6, max(vc.values) * 
             arrowprops=dict(arrowstyle="->", color=OI["vermillion"], lw=0.7))
 pu.label_panel(ax, "C", x=-0.20)
 
-fig.suptitle("Figure S3. Consensus layering of the 659 uncategorised compounds "
-             "(each model contributes one top-10% vote)", fontsize=8.5)
 pu.save_figure(fig, FIG / "FigS3_consensus_layers", formats=("pdf", "png"), dpi=600)
 plt.close(fig)
 P("[S3] FigS3_consensus_layers")
@@ -241,7 +235,6 @@ ax.axhline(0.8046, ls="--", color="gray", lw=0.9)
 ax.set_xticks(x); ax.set_xticklabels([LNICE[s] for s in lab["scheme"]], fontsize=6.4)
 ax.set_ylabel("5-fold CV AUROC (Most vs No)")
 ax.set_ylim(0.68, 0.88)
-ax.set_title("Figure S4. Label-encoding sensitivity", fontsize=9.0, pad=10)
 pu.label_panel(ax, "A", x=-0.16, y=1.10)
 ax.text(0.98, 0.97, "L1 and L4 \u2265 L2, L3", transform=ax.transAxes,
         ha="right", va="top", fontsize=6.4,
@@ -291,8 +284,6 @@ ax.text(0.03, 0.95,
         bbox=dict(boxstyle="round,pad=0.3", fc="white", ec="0.6", lw=0.5))
 pu.label_panel(ax, "B", x=-0.16)
 
-fig.suptitle("Figure S5. The Ambiguous category is not resolved by the model into a single risk direction",
-             fontsize=8.5)
 pu.save_figure(fig, FIG / "FigS5_ambiguous_placement", formats=("pdf", "png"), dpi=600)
 plt.close(fig)
 P("[S5] FigS5_ambiguous_placement")
@@ -328,9 +319,6 @@ ax.text(70, 1.5, "Top 10%\n(rank 66)", fontsize=6.2, color="gray", va="center")
 ax.set_yticks(y); ax.set_yticklabels([NAME[d] for d in s11["drug"]], fontsize=6.8)
 ax.set_xlabel("Rank among the 659 uncategorised compounds (across 36 model combinations)")
 ax.set_xlim(0, 660)
-ax.set_title("Figure S6. Rank stability of the validation panel\n"
-             "(min\u2013max range over 36 = 4 label \u00d7 3 classifier \u00d7 3 descriptor combinations)",
-             fontsize=8.8)
 from matplotlib.lines import Line2D
 ax.legend(handles=[
     Line2D([], [], marker="o", color=OI["vermillion"], ls="", label="positive bridge"),
