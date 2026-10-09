@@ -8,8 +8,8 @@ Toxicology* (ACS).
 | Directory | What it holds |
 |---|---|
 | `main_pipeline/` | Primary analysis pipeline — data curation, molecular featurization, model training/selection, SHAP attribution, full-family fragment enrichment with FDR control, structural backtracking, and the published figures. Scripts are numbered in execution order (`01_…` → `24_…`); `fig*.py` are the figure scripts. |
-| `robustness/` | Independent re-implementation used for the sensitivity audit (label-encoding scheme × classifier × descriptor space; manuscript §2.8 / §3.5). |
-| `results/` | Tabular outputs of the robustness analysis (CSV / JSON / logs) underlying Figures 3 and S1–S6. |
+| `robustness/` | Independent re-implementation used for the sensitivity audit (label-encoding scheme × classifier × descriptor space; manuscript §2.8 / §3.5). `S16_supplementary_tables.py` re-assembles Tables S1–S7 of the Supplementary Information from the files below. |
+| `results/` | Tabular outputs of the robustness analysis (CSV / JSON / logs) underlying Figures 3 and S1–S6, plus the machine-readable supplementary tables (`Supplementary_Table_S1.csv`, `Supplementary_Table_S2.csv`). |
 | `data/` | Derived datasets and statistics underlying the main results: final feature matrix, train/test splits, cross-validation folds, model metrics, SHAP values, the full-family enrichment table (`enrichment_fullfamily_bitidentity.xlsx`), risk predictions for the uncategorized compounds, and the external-validation outputs. |
 | `figures/` | The ten final figures (Figures 1–4 and Figures S1–S6), each as PNG (600 dpi) and PDF. |
 
@@ -39,8 +39,7 @@ pip install -r requirements.txt
 ```
 
 > The SHAP step (`main_pipeline/17_SHAP_analysis.py`, `main_pipeline/21_shap_enrichment_v2.py`)
-> additionally requires the `shap` package, which was installed in the environment used to
-> run the primary pipeline.
+> uses the `shap` package, pinned as `shap==0.52.0` in `requirements.txt`.
 
 ## Running the pipeline
 

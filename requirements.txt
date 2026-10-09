@@ -15,6 +15,5 @@ pillow==12.3.0
 openpyxl==3.1.5
 
 # SHAP attribution (used by main_pipeline/17_SHAP_analysis.py,
-# main_pipeline/21_shap_enrichment_v2.py; installed in the environment
-# that ran the primary pipeline)
-shap
+# main_pipeline/21_shap_enrichment_v2.py)
+shap==0.52.0
