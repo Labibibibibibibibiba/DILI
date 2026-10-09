@@ -1,0 +1,20 @@
+[1] 未分类药 (659, 1037)；特征 1031 全部匹配
+    分数范围 [0.0527, 0.8681]  mean=0.4658  std=0.1443
+    类别构成: {'Ambiguous-DILI-concern': 331, 'vLess-DILI-concern': 328}
+[2] vLess n=328 mean=0.4779 | Ambiguous n=331 mean=0.4539 | Mann-Whitney U p = 0.1110
+
+[3] 尾部富集:
+Top_fraction   N  vLess_count  Ambiguous_count  vLess_fraction  Fisher_p  Odds_ratio  OR_CI_low  OR_CI_high  boundary_score             boundary_drug
+      Top 5%  32           24                8        0.750000  0.003536    3.187500   1.410418    7.203649        0.685571                 Celecoxib
+     Top 10%  65           38               27        0.584615  0.151965    1.475351   0.878090    2.478860        0.648096 Vortioxetine hydrobromide
+     Top 20% 131           75               56        0.572519  0.063593    1.455745   0.989600    2.141466        0.594361              Fluorouracil
+
+[4] 验证药在 659 排序中的位置:
+    Chlorpromazine   → rank   3/659  score=0.8026  vLess-DILI-concern
+    Sulfamethizole   → rank   2/659  score=0.8047  vLess-DILI-concern
+    Cabotegravir     → rank   6/659  score=0.7670  Ambiguous-DILI-concern
+    Mebendazole      → rank  10/659  score=0.7417  vLess-DILI-concern
+    Oxybutynin       → rank 526/659  score=0.3427  vLess-DILI-concern
+    Tolterodine      → rank 513/659  score=0.3499  vLess-DILI-concern
+    Metformin        → rank 570/659  score=0.3046  vLess-DILI-concern
+    Diclofenac       → 未在 659 未分类集中找到

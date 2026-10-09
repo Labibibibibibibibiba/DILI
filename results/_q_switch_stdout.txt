@@ -1,0 +1,66 @@
+D:\DILI_1\_scripts\_q_F1_switch_cost.py:6: SyntaxWarning: invalid escape sequence '\D'
+  只读 D:\DILI。"""
+D:\DILI_1\_scripts\dili_common.py:2: SyntaxWarning: invalid escape sequence '\D'
+  """共享数据加载器 — 所有后续步骤 import 本模块, 保证 split / 路径一致(只读 D:\DILI)。"""
+D:\DILI_1\_scripts\_q_F1_switch_cost.py:33: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  mat["_k"] = mat["CompoundName"].astype(str).str.strip()
+D:\DILI_1\_scripts\_q_F1_switch_cost.py:34: PerformanceWarning: DataFrame is highly fragmented.  This is usually the result of calling `frame.insert` many times, which has poor performance.  Consider joining all columns at once using pd.concat(axis=1) instead. To get a de-fragmented frame, use `newframe = frame.copy()`
+  mat["cat"] = mat["_k"].map(dict(zip(pr["_k"], pr["DILI_category"]))).astype(str).str.strip().map(
+======================================================================
+[1] Top5% 尾部富集 (论文 §3.5 核心应用结论)
+======================================================================
+  F1 纯Morgan   Top5%(33) = vLess 23 + Amb 10   OR=2.42  Fisher P=0.0204  ✅显著
+  F3 主模型       Top5%(33) = vLess 24 + Amb 9   OR=2.82  Fisher P=0.0072  ✅显著
+
+======================================================================
+[2] 全部类别分布 Mann-Whitney (论文 §3.5)
+======================================================================
+  F1: vLess 中位=0.487  Amb 中位=0.480  MWU P=0.2442
+  F3: vLess 中位=0.468  Amb 中位=0.460  MWU P=0.0881
+
+======================================================================
+[3] V2.2 核心 7 药名次 (论文 §3.5 点名药物)
+======================================================================
+  药         F1名次    F3名次      位移     F1分数     F3分数
+  CPZ          4       3      +1    0.854    0.878
+  SMX          7       5      +2    0.826    0.854
+  CAB          5       6      -1    0.830    0.832
+  MBZ         22      20      +2    0.746    0.766
+  OXY        589     573     +16    0.236    0.270
+  TOL        560     554      +6    0.290    0.288
+  MET        612     602     +10    0.182    0.222
+
+[3b] Top-20 名单直接可比性
+   Top-20 中同名列 15/20, 名次完全相同 2/20
+    1 Ofloxacin                            | Ofloxacin                            =
+    2 Tretinoin                            | Tretinoin                            =
+    3 Telbivudine                          | Chlorpromazine hydrochloride          
+    4 Chlorpromazine hydrochloride         | Fenofibric acid                       
+    5 Cabotegravir sodium                  | Sulfamethizole                        
+    6 Fenofibric acid                      | Cabotegravir sodium                   
+    7 Sulfamethizole                       | Meclofenamate sodium                  
+    8 Meclofenamate sodium                 | Sulfadiazine                          
+    9 Aceclofenac                          | Thalidomide                           
+   10 Imipramine hydrochloride             | Aceclofenac                           
+   11 Clonidine hydrochloride              | Ethacrynic acid                       
+   12 Olsalazine sodium                    | Olanzapine                            
+   13 Sulfadiazine                         | Dapsone                               
+   14 Amitriptyline hydrochloride          | Imipramine hydrochloride              
+   15 Thalidomide                          | Ketoprofen                            
+   16 Olanzapine                           | Thioguanine                           
+   17 Thioguanine                          | Amitriptyline hydrochloride           
+   18 Azithromycin                         | Telbivudine                           
+   19 Celecoxib                            | Lenalidomide                          
+   20 Perphenazine                         | Mebendazole                           
+
+======================================================================
+[4] FP_367 的 RF 内置重要性 (非 SHAP)
+======================================================================
+  F3 空间 FP_367 重要性 0.004824, 在 1024 bit 中排第 8 位
+  bit 块总重要性 0.8622 / desc 块 0.1378
+  F1 空间 FP_367 重要性 0.005391, 排第 10 位
+
+======================================================================
+[5] 外部验证 DILIst: FP_367 富集 (论文 §3.6)
+======================================================================
+  未找到标准文件名, 目录中含 DILIst 的文件: []

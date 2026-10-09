@@ -1,0 +1,332 @@
+﻿CompoundName,P_Most,P_Less,P_No,P_Amb,argmax
+Rifapentine,0.668,0.084,0.07,0.178,Most
+Telbivudine,0.668,0.091,0.095,0.146,Most
+Monomethyl fumarate,0.562,0.092,0.168,0.178,Most
+Duvelisib,0.542,0.151,0.127,0.18,Most
+Meclofenamate sodium,0.49933333333333335,0.2001666666666667,0.124,0.1765,Most
+Diazoxide,0.4975,0.23516666666666666,0.092,0.17533333333333334,Most
+Triclabendazole,0.4963333333333333,0.18566666666666665,0.16,0.158,Most
+Deferiprone,0.462,0.138,0.254,0.146,Most
+Clonidine hydrochloride,0.456,0.198,0.234,0.112,Most
+Vandetanib,0.444,0.142,0.144,0.27,Most
+Cobicistat,0.43,0.14466666666666667,0.186,0.23933333333333331,Most
+Acetohydroxamic acid,0.43,0.072,0.348,0.15,Most
+Ethacrynic acid,0.428,0.30333333333333334,0.106,0.16266666666666668,Most
+Fomepizole,0.4271666666666667,0.12083333333333333,0.296,0.156,Most
+Armodafinil,0.418,0.32433333333333336,0.1396666666666667,0.118,Most
+Eravacycline dihydrochloride,0.402,0.1343333333333333,0.206,0.25766666666666665,Most
+Brigatinib,0.4,0.16,0.116,0.324,Most
+Carbidopa,0.398,0.178,0.338,0.086,Most
+Tucatinib,0.392,0.212,0.094,0.302,Most
+Omadacycline tosylate,0.39,0.16866666666666666,0.18733333333333335,0.254,Most
+Belzutifan,0.388,0.236,0.13,0.246,Most
+Dexmedetomidine hydrochloride,0.38,0.188,0.248,0.184,Most
+Fexinidazole,0.374,0.274,0.166,0.186,Most
+Isocarboxazid,0.372,0.238,0.14,0.25,Most
+Guanfacine hydrochloride,0.366,0.3681333333333333,0.146,0.11986666666666668,Less
+Altretamine,0.362,0.246,0.22483333333333333,0.16716666666666666,Most
+Nalidixic acid,0.36,0.26666666666666666,0.16266666666666668,0.21066666666666667,Most
+Oliceridine,0.36,0.29,0.18666666666666665,0.1633333333333333,Most
+Avacopan,0.354,0.172,0.192,0.282,Most
+Clobazam,0.352,0.3,0.18,0.168,Most
+Desipramine hydrochloride,0.35,0.404,0.116,0.13,Less
+Mephenytoin,0.346,0.1423333333333333,0.326,0.18566666666666667,Most
+Isavuconazonium sulfate,0.342,0.156,0.188,0.314,Most
+Loxapine succinate,0.34,0.268,0.138,0.254,Most
+Pralidoxime chloride,0.338,0.182,0.332,0.148,Most
+Tivozanib hydrochloride,0.332,0.2,0.13,0.338,Amb
+Atovaquone,0.332,0.32,0.17,0.178,Most
+Mirabegron,0.332,0.236,0.218,0.214,Most
+Torsemide,0.3318666666666667,0.2694666666666667,0.14266666666666666,0.256,Most
+Eprosartan mesylate,0.328,0.268,0.154,0.25,Most
+Anagrelide hydrochloride,0.322,0.346,0.124,0.208,Less
+Ponatinib hydrochloride,0.322,0.154,0.136,0.388,Amb
+Rufinamide,0.314,0.27986666666666665,0.138,0.26813333333333333,Most
+Umbralisib tosylate,0.312,0.204,0.202,0.282,Most
+Flucytosine,0.312,0.328,0.18,0.18,Less
+Nitisinone,0.311,0.235,0.2,0.254,Most
+Nabumetone,0.31,0.3705,0.182,0.1375,Less
+Eslicarbazepine acetate,0.3086666666666667,0.362,0.14766666666666667,0.1816666666666667,Less
+Tazemetostat hydrobromide,0.308,0.24,0.176,0.276,Most
+Thiothixene,0.306,0.3895,0.1345,0.17,Less
+Caspofungin acetate,0.304,0.136,0.346,0.214,No
+Cenobamate,0.304,0.2383333333333333,0.154,0.3036666666666667,Most
+Sonidegib phosphate,0.302,0.20933333333333334,0.15866666666666665,0.33,Amb
+Cannabidiol,0.30066666666666664,0.18933333333333335,0.318,0.192,No
+Demeclocycline hydrochloride,0.298,0.21446666666666667,0.226,0.2615333333333333,Most
+Selinexor,0.298,0.282,0.21,0.21,Most
+Hydroxyprogesterone caproate,0.296,0.268,0.158,0.278,Most
+Azacitidine,0.296,0.156,0.29,0.258,Most
+Probenecid,0.294,0.322,0.166,0.218,Less
+Amifampridine phosphate,0.294,0.25789999999999996,0.2761,0.172,Most
+Belinostat,0.2938333333333334,0.21643333333333334,0.2237333333333333,0.266,Most
+Avapritinib,0.292,0.25,0.158,0.3,Amb
+Ethotoin,0.29,0.22016666666666668,0.232,0.2578333333333333,Most
+Pretomanid,0.288,0.244,0.218,0.25,Most
+Vismodegib,0.288,0.256,0.178,0.278,Most
+Chlorthalidone,0.288,0.26466666666666666,0.14333333333333334,0.304,Amb
+Zolpidem tartrate,0.2876,0.2314,0.165,0.316,Amb
+Diroximel fumarate,0.2861666666666666,0.18783333333333335,0.262,0.264,Most
+Lacosamide,0.286,0.23273333333333332,0.21933333333333335,0.26193333333333335,Most
+Maprotiline hydrochloride,0.284,0.208,0.317,0.191,No
+Dronabinol,0.28,0.22,0.318,0.182,No
+Milrinone lactate,0.28,0.196,0.182,0.342,Amb
+Eluxadoline,0.278,0.21483333333333335,0.19516666666666665,0.312,Amb
+Doravirine,0.276,0.256,0.174,0.294,Amb
+Inamrinone lactate,0.2756,0.2690666666666667,0.16066666666666665,0.2946666666666667,Amb
+Trilaciclib dihydrochloride,0.274,0.314,0.112,0.3,Less
+Fluvoxamine maleate,0.27,0.203,0.248,0.279,Amb
+Darolutamide,0.268,0.23133333333333334,0.20266666666666666,0.298,Amb
+Trimethadione,0.267,0.131,0.30066666666666664,0.30133333333333334,Amb
+Pilocarpine,0.266,0.274,0.208,0.252,Less
+Axitinib,0.266,0.258,0.254,0.222,Most
+Relugolix,0.26,0.252,0.19,0.298,Amb
+Tolbutamide,0.258,0.4435,0.128,0.1705,Less
+Clofarabine,0.256,0.378,0.236,0.13,Less
+Erdafitinib,0.256,0.254,0.128,0.362,Amb
+Bumetanide,0.254,0.3075,0.1345,0.304,Less
+Ripretinib,0.254,0.234,0.264,0.248,No
+Ozanimod hydrochloride,0.254,0.236,0.176,0.334,Amb
+Rifaximin,0.254,0.226,0.25,0.27,Amb
+Asciminib hydrochloride,0.252,0.186,0.184,0.378,Amb
+Ponesimod,0.25,0.294,0.24783333333333335,0.2081666666666667,Less
+Propranolol hydrochloride,0.25,0.312,0.272,0.166,Less
+Cabotegravir sodium,0.248,0.256,0.222,0.274,Amb
+Pentoxifylline,0.248,0.204,0.3443333333333333,0.20366666666666666,No
+Ethosuximide,0.246,0.192,0.238,0.324,Amb
+Rucaparib camsylate,0.246,0.204,0.234,0.316,Amb
+Oxazepam,0.246,0.386,0.046,0.322,Less
+Moxidectin,0.244,0.212,0.234,0.31,Amb
+Secobarbital sodium,0.242,0.162,0.114,0.482,Amb
+Sotorasib,0.24,0.24,0.224,0.296,Amb
+Neratinib maleate,0.24,0.19,0.17,0.4,Amb
+Osilodrostat phosphate,0.2386666666666667,0.22666666666666666,0.236,0.29866666666666664,Amb
+Rasagiline mesylate,0.238,0.2248,0.164,0.3732,Amb
+Vardenafil hydrochloride,0.236,0.264,0.176,0.324,Amb
+Baricitinib,0.234,0.265,0.141,0.36,Amb
+Risedronate sodium,0.234,0.286,0.21,0.27,Less
+Binimetinib,0.234,0.206,0.168,0.392,Amb
+Zolmitriptan,0.2335,0.3345,0.17,0.262,Less
+Midostaurin,0.2333333333333333,0.2526666666666667,0.274,0.24,No
+Decitabine,0.232,0.29,0.104,0.374,Amb
+Palonosetron hydrochloride,0.23,0.32053333333333334,0.24833333333333335,0.20113333333333333,Less
+Alectinib hydrochloride,0.226,0.248,0.192,0.334,Amb
+Pitavastatin calcium,0.224,0.217,0.265,0.294,Amb
+Maralixibat chloride,0.222,0.169,0.268,0.341,Amb
+Trimethobenzamide hydrochloride,0.222,0.354,0.222,0.202,Less
+Mesoridazine besylate,0.222,0.324,0.202,0.252,Less
+Miltefosine,0.22,0.158,0.526,0.096,No
+Siponimod,0.22,0.253,0.2174,0.30960000000000004,Amb
+Ixabepilone,0.22,0.222,0.254,0.304,Amb
+Lonafarnib,0.218,0.2833333333333334,0.229,0.2696666666666666,Less
+Acalabrutinib,0.218,0.268,0.22,0.294,Amb
+Metolazone,0.218,0.365,0.165,0.252,Less
+Cabozantinib s-malate,0.216,0.174,0.21,0.4,Amb
+Dabrafenib mesylate,0.216,0.29,0.158,0.336,Amb
+Estrone,0.215,0.181,0.284,0.32,Amb
+Enasidenib mesylate,0.214,0.218,0.21,0.358,Amb
+Norethindrone,0.214,0.26,0.30466666666666664,0.22133333333333333,No
+Pemigatinib,0.212,0.296,0.171,0.321,Amb
+Talazoparib tosylate,0.212,0.178,0.172,0.438,Amb
+Methadone hydrochloride,0.212,0.278,0.432,0.078,No
+Furosemide,0.21,0.328,0.158,0.304,Less
+Encorafenib,0.208,0.264,0.135,0.393,Amb
+Lumateperone tosylate,0.208,0.258,0.232,0.302,Amb
+Pramipexole dihydrochloride,0.208,0.298,0.2245,0.2695,Less
+Lenvatinib mesylate,0.208,0.246,0.1325,0.4135,Amb
+Granisetron hydrochloride,0.2066666666666667,0.3653333333333334,0.238,0.19,Less
+Ambrisentan,0.206,0.267,0.382,0.145,No
+Temazepam,0.206,0.3473333333333333,0.07266666666666666,0.374,Amb
+Tasimelteon,0.204,0.15066666666666667,0.434,0.21133333333333335,No
+Emtricitabine,0.2036,0.4924,0.092,0.212,Less
+Fidaxomicin,0.2,0.262,0.25,0.288,Amb
+Methenamine hippurate,0.2,0.292,0.238,0.27,Less
+Cariprazine hydrochloride,0.2,0.358,0.202,0.24,Less
+Ivosidenib,0.2,0.256,0.194,0.35,Amb
+Belumosudil mesylate,0.198,0.197,0.241,0.364,Amb
+Elagolix sodium,0.198,0.216,0.202,0.384,Amb
+Ibrexafungerp citrate,0.19640000000000002,0.2216,0.238,0.344,Amb
+Sodium phenylbutyrate,0.196,0.258,0.414,0.132,No
+Fedratinib hydrochloride,0.194,0.26733333333333337,0.18066666666666667,0.358,Amb
+Entrectinib,0.194,0.226,0.188,0.392,Amb
+Eletriptan hydrobromide,0.194,0.252,0.312,0.242,No
+Silodosin,0.194,0.329,0.259,0.218,Less
+Secnidazole,0.194,0.288,0.301,0.217,No
+Tedizolid phosphate,0.194,0.214,0.22,0.372,Amb
+Amoxapine,0.194,0.382,0.136,0.288,Less
+Fostamatinib disodium,0.192,0.226,0.218,0.364,Amb
+Telotristat etiprate,0.192,0.257,0.165,0.386,Amb
+Cilostazol,0.192,0.344,0.16666666666666669,0.2973333333333334,Less
+Lomefloxacin hydrochloride,0.19,0.442,0.114,0.254,Less
+Indinavir sulfate,0.19,0.32566666666666666,0.23833333333333334,0.246,Less
+Berotralstat hydrochloride,0.188,0.202,0.25,0.36,Amb
+Nebivolol hydrochloride,0.188,0.244,0.2653333333333333,0.30266666666666664,Amb
+Ixazomib citrate,0.188,0.288,0.272,0.252,Less
+Benznidazole,0.188,0.279,0.284,0.249,No
+Fluoxymesterone,0.187,0.293,0.224,0.296,Amb
+Infigratinib phosphate,0.186,0.25,0.158,0.406,Amb
+Clorazepate dipotassium,0.186,0.344,0.19,0.28,Less
+Guanidine hydrochloride,0.184,0.21,0.402,0.204,No
+Fulvestrant,0.182,0.222,0.324,0.272,No
+Tofacitinib citrate,0.18,0.246,0.262,0.312,Amb
+Tafenoquine succinate,0.18,0.178,0.24,0.402,Amb
+Trimipramine maleate,0.18,0.308,0.242,0.27,Less
+Nateglinide,0.18,0.3259666666666667,0.3035,0.1905333333333333,Less
+Pergolide mesylate,0.18,0.179,0.367,0.274,No
+Edoxaban tosylate,0.18,0.282,0.16,0.378,Amb
+Selpercatinib,0.178,0.16,0.163,0.499,Amb
+Balsalazide disodium,0.178,0.394,0.25,0.178,Less
+Larotrectinib sulfate,0.178,0.244,0.218,0.36,Amb
+Lorlatinib,0.178,0.25,0.17,0.402,Amb
+Omacetaxine mepesuccinate,0.176,0.294,0.192,0.338,Amb
+Amprenavir,0.176,0.2225,0.2875,0.314,Amb
+Gilteritinib fumarate,0.176,0.11266666666666666,0.232,0.47933333333333333,Amb
+Praziquantel,0.176,0.336,0.20116666666666666,0.2868333333333334,Less
+Aprepitant,0.174,0.178,0.249,0.399,Amb
+Dolasetron mesylate,0.17266666666666666,0.2633333333333333,0.248,0.316,Amb
+Bedaquiline fumarate,0.172,0.248,0.315,0.265,No
+Moricizine hydrochloride,0.172,0.406,0.202,0.22,Less
+Methyclothiazide,0.172,0.4906666666666667,0.1413333333333333,0.196,Less
+Delafloxacin meglumine,0.17,0.211,0.308,0.311,Amb
+Indapamide,0.168,0.27366666666666667,0.2043333333333333,0.354,Amb
+Niraparib tosylate,0.168,0.338,0.138,0.356,Amb
+Tiagabine hydrochloride,0.16666666666666669,0.38333333333333336,0.238,0.212,Less
+Epoprostenol sodium,0.166,0.23,0.344,0.26,No
+Vigabatrin,0.166,0.21866666666666665,0.415,0.20033333333333334,No
+Alogliptin benzoate,0.164,0.34,0.202,0.294,Less
+Entecavir,0.164,0.248,0.21,0.378,Amb
+Iloperidone,0.164,0.378,0.228,0.23,Less
+Sotalol hydrochloride,0.162,0.257,0.395,0.186,No
+Mycophenolic sodium,0.16,0.227,0.343,0.27,No
+Mechlorethamine hydrochloride,0.16,0.336,0.4,0.104,No
+Nimodipine,0.16,0.257,0.1555,0.4275,Amb
+Bleomycin sulfate,0.158,0.224,0.372,0.246,No
+Misoprostol,0.158,0.226,0.382,0.234,No
+Nicardipine hydrochloride,0.158,0.278,0.142,0.422,Amb
+Naratriptan hydrochloride,0.156,0.204,0.2282,0.4118,Amb
+Upadacitinib,0.154,0.224,0.25,0.372,Amb
+Selumetinib sulfate,0.154,0.168,0.11,0.568,Amb
+Lefamulin acetate,0.153,0.318,0.209,0.32,Amb
+Trimetrexate glucuronate,0.152,0.276,0.3,0.272,No
+Fosamprenavir calcium,0.152,0.251,0.307,0.29,No
+Ruxolitinib phosphate,0.152,0.192,0.19,0.466,Amb
+Tegaserod maleate,0.15,0.236,0.262,0.352,Amb
+Delavirdine mesylate,0.15,0.2075,0.276,0.3665,Amb
+Odevixibat,0.148,0.229,0.338,0.285,No
+Galantamine hydrobromide,0.148,0.2846666666666667,0.31933333333333336,0.248,No
+Buspirone hydrochloride,0.148,0.396,0.282,0.174,Less
+Eribulin mesylate,0.148,0.23,0.322,0.3,No
+Pralsetinib,0.146,0.198,0.198,0.458,Amb
+Bempedoic acid,0.1441666666666667,0.18183333333333332,0.498,0.176,No
+Triazolam,0.144,0.626,0.14,0.09,Less
+Mobocertinib succinate,0.144,0.376,0.186,0.294,Less
+Afatinib dimaleate,0.142,0.232,0.19,0.436,Amb
+"Estrogens, conjugated",0.142,0.18666666666666665,0.12183333333333334,0.5495,Amb
+Nadolol,0.142,0.242,0.252,0.364,Amb
+Atogepant,0.14,0.118,0.56,0.182,No
+Panobinostat lactate,0.14,0.30093333333333333,0.23706666666666668,0.322,Amb
+Methohexital sodium,0.1395,0.1965,0.206,0.458,Amb
+Valbenazine tosylate,0.138,0.21933333333333335,0.29466666666666663,0.348,Amb
+Hydroxocobalamin,0.138,0.174,0.458,0.23,No
+Fostemsavir tromethamine,0.138,0.31,0.226,0.326,Amb
+Cycloserine,0.136,0.188,0.356,0.32,No
+Cidofovir,0.136,0.23866666666666667,0.286,0.3393333333333334,Amb
+Oxytetracycline,0.134,0.19433333333333333,0.3436666666666666,0.328,No
+Nalmefene hydrochloride,0.132,0.154,0.534,0.18,No
+Medroxyprogesterone acetate,0.132,0.17,0.202,0.496,Amb
+Oritavancin diphosphate,0.132,0.228,0.286,0.354,Amb
+Prazosin hydrochloride,0.132,0.316,0.334,0.218,No
+Sumatriptan succinate,0.132,0.3055,0.33049999999999996,0.232,No
+Plazomicin sulfate,0.13,0.232,0.39,0.248,No
+Estropipate,0.128,0.144,0.198,0.53,Amb
+Enalaprilat,0.128,0.5108333333333334,0.2065,0.15466666666666667,Less
+Isosorbide mononitrate,0.126,0.17533333333333334,0.42,0.2786666666666666,No
+Chenodiol,0.124,0.036,0.088,0.752,Amb
+Megestrol acetate,0.124,0.27,0.118,0.488,Amb
+Hydroflumethiazide,0.124,0.62,0.134,0.122,Less
+Betaxolol hydrochloride,0.122,0.21,0.362,0.306,No
+Cefotetan disodium,0.122,0.378,0.23,0.27,Less
+Toremifene citrate,0.12,0.446,0.236,0.198,Less
+Dexamethasone,0.118,0.346,0.284,0.252,Less
+Fluphenazine hydrochloride,0.118,0.62,0.15,0.112,Less
+Cefiderocol sulfate tosylate,0.118,0.4266666666666667,0.182,0.2733333333333334,Less
+Lincomycin hydrochloride,0.118,0.196,0.38,0.306,No
+Capreomycin sulfate,0.116,0.19436666666666663,0.4098,0.2798333333333334,No
+Etonogestrel,0.116,0.154,0.498,0.232,No
+Famciclovir,0.116,0.385,0.209,0.29,Less
+Paricalcitol,0.11566666666666665,0.15633333333333332,0.356,0.372,Amb
+Peramivir,0.114,0.2765,0.4,0.2095,No
+Glasdegib maleate,0.114,0.24,0.236,0.41,Amb
+Cobimetinib fumarate,0.114,0.252,0.288,0.346,Amb
+Methocarbamol,0.112,0.2854666666666667,0.3883333333333333,0.21420000000000003,No
+Dipyridamole,0.112,0.2745,0.3815,0.232,No
+Tepotinib hydrochloride,0.11,0.168,0.235,0.487,Amb
+Cevimeline hydrochloride,0.11,0.214,0.388,0.288,No
+Fosaprepitant dimeglumine,0.108,0.16,0.374,0.358,No
+Colchicine,0.108,0.308,0.174,0.41,Amb
+Dexrazoxane hydrochloride,0.108,0.208,0.334,0.35,Amb
+Pentobarbital sodium,0.108,0.092,0.1375,0.6625,Amb
+Spectinomycin hydrochloride,0.106,0.214,0.42,0.26,No
+Artesunate,0.104,0.258,0.3866666666666666,0.2513333333333333,No
+Lisdexamfetamine dimesylate,0.104,0.3031666666666666,0.4108333333333333,0.182,No
+Aztreonam,0.1036,0.4184,0.16,0.318,Less
+Lurbinectedin,0.102,0.163,0.162,0.573,Amb
+Tiopronin,0.102,0.232,0.412,0.254,No
+Pasireotide diaspartate,0.1,0.198,0.41,0.292,No
+Pemetrexed disodium,0.098,0.213,0.459,0.23,No
+Trabectedin,0.098,0.154,0.212,0.536,Amb
+Timolol maleate,0.096,0.262,0.328,0.314,No
+Doxercalciferol,0.096,0.07,0.638,0.196,No
+Ganciclovir sodium,0.096,0.3095,0.2825,0.312,Amb
+Valganciclovir hydrochloride,0.094,0.378,0.266,0.262,Less
+L-glutamine,0.092,0.2013333333333333,0.45233333333333337,0.2543333333333333,No
+Pralatrexate,0.092,0.184,0.506,0.218,No
+Amantadine hydrochloride,0.09,0.292,0.514,0.104,No
+Hydromorphone hydrochloride,0.09,0.158,0.52,0.232,No
+Butabarbital sodium,0.088,0.138,0.19,0.584,Amb
+Vinorelbine tartrate,0.088,0.48,0.202,0.23,Less
+Icatibant acetate,0.088,0.218,0.41,0.284,No
+Cetrorelix acetate,0.088,0.128,0.3,0.484,Amb
+Naltrexone hydrochloride,0.086,0.18,0.602,0.132,No
+Ertapenem sodium,0.086,0.388,0.186,0.34,Less
+Moexipril hydrochloride,0.084,0.668,0.092,0.156,Less
+Perindopril erbumine,0.08233333333333333,0.5756666666666668,0.158,0.184,Less
+Gallium nitrate,0.082,0.048,0.64,0.23,No
+Tromethamine,0.082,0.16,0.48,0.278,No
+Tetrabenazine,0.082,0.132,0.684,0.102,No
+Nisoldipine,0.078,0.605,0.115,0.202,Less
+Doripenem,0.074,0.386,0.214,0.326,Less
+Plecanatide,0.072,0.136,0.58,0.212,No
+Selenious acid,0.072,0.048,0.634,0.246,No
+Degarelix acetate,0.072,0.14,0.388,0.4,Amb
+Histrelin acetate,0.072,0.488,0.16,0.28,Less
+Lanreotide acetate,0.07,0.124,0.454,0.352,No
+Streptozocin,0.068,0.296,0.496,0.14,No
+Bisoprolol fumarate,0.066,0.368,0.368,0.198,Less
+Cabazitaxel,0.066,0.634,0.13,0.17,Less
+Metoprolol succinate,0.066,0.49,0.318,0.126,Less
+Cephradine,0.06333333333333334,0.7471666666666668,0.0675,0.122,Less
+Mesna,0.062,0.154,0.616,0.168,No
+Idarubicin hydrochloride,0.056,0.268,0.556,0.12,No
+Bremelanotide acetate,0.056,0.158,0.512,0.274,No
+Ceftizoxime sodium,0.056,0.634,0.068,0.242,Less
+Cholic acid,0.056,0.124,0.396,0.424,Amb
+Levamlodipine maleate,0.054,0.49933333333333335,0.17066666666666666,0.276,Less
+Enfuvirtide,0.054,0.24533333333333335,0.5406666666666667,0.16,No
+Ceftibuten dihydrate,0.054,0.532,0.136,0.278,Less
+L-Cysteine,0.05,0.1648,0.464,0.3212,No
+Piperacillin sodium,0.044,0.644,0.172,0.14,Less
+Desmopressin acetate,0.034,0.09,0.69,0.186,No
+Edetate calcium disodium,0.034,0.076,0.718,0.172,No
+Gadodiamide,0.034,0.046,0.716,0.204,No
+Ursodiol,0.03,0.09,0.194,0.686,Amb
+Epirubicin hydrochloride,0.03,0.648,0.271,0.051,Less
+Aprotinin,0.028,0.072,0.622,0.278,No
+Cefpodoxime proxetil,0.028,0.726,0.05,0.196,Less
+Lepirudin,0.024,0.078,0.688,0.21,No
+Arsenic trioxide,0.022,0.066,0.764,0.148,No
+Lutetium lu 177 dotatate,0.02,0.06,0.754,0.166,No
+Foscarnet sodium,0.02,0.076,0.796,0.108,No
+Pamidronate disodium,0.018,0.394,0.442,0.146,No
+Goserelin acetate,0.018,0.474,0.248,0.26,Less
+Cysteamine bitartrate,0.014,0.22,0.56,0.206,No

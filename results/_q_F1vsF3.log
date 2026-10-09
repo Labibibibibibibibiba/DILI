@@ -1,0 +1,25 @@
+[A] 659 未知集: F1 vs F3 分数 Spearman rho = 0.9322  (P=3.79e-292)
+    排名位移 |dr|: 中位=35.0  90分位=112.0  最大=329
+    Top- 16 重叠 12/16  (Jaccard 0.600)
+    Top- 33 重叠 23/33  (Jaccard 0.535)
+    Top- 66 重叠 46/66  (Jaccard 0.535)
+    Top-132 重叠 104/132  (Jaccard 0.650)
+    F1 Top5%: vLess 23/33
+    F3 Top5%: vLess 24/33
+
+[B] V2.2 核心 7 药 (L1 编码 / 全量训练池 / RF)
+    药                                    F1分     F3分   F1排   F3排     Δ排
+    Chlorpromazine hydrochloride       0.854   0.878     4     3     +1
+    Sulfamethizole                     0.826   0.854     7     5     +2
+    Cabotegravir sodium                0.830   0.832     5     6     -1
+    Mebendazole                        0.746   0.766    22    20     +2
+    Oxybutynin chloride                0.236   0.270   589   573    +16
+    Tolterodine tartrate               0.290   0.288   560   554     +6
+    Metformin hydrochloride            0.182   0.222   612   602    +10
+
+[C] F3 空间 RF 块重要性: bit=0.8622  7desc=0.1378  → 1024 bit 占 86.2%, 7 desc 占 13.8%
+    每维平均重要性: bit 0.000842 vs desc 0.019688  (描述符单维是 bit 的 23 倍)
+
+[D] 分数分布 (659)
+    F1: min=0.020 中位=0.482 max=0.922 sd=0.169
+    F3: min=0.012 中位=0.466 max=0.922 sd=0.173

@@ -1,0 +1,12 @@
+MISS numpy        ModuleNotFoundError
+MISS pandas       ModuleNotFoundError
+MISS openpyxl     ModuleNotFoundError
+MISS sklearn      ModuleNotFoundError
+MISS rdkit        ModuleNotFoundError
+MISS joblib       ModuleNotFoundError
+MISS scipy        ModuleNotFoundError
+MISS matplotlib   ModuleNotFoundError
+MISS xgboost      ModuleNotFoundError
+MISS lightgbm     ModuleNotFoundError
+MISS catboost     ModuleNotFoundError
+python 3.13.14 D:\DILI_1\.venv\Scripts\python.exe

@@ -1,0 +1,5 @@
+D:\DILI_1\_scripts\dili_common.py:2: SyntaxWarning: invalid escape sequence '\D'
+  """共享数据加载器 — 所有后续步骤 import 本模块, 保证 split / 路径一致(只读 D:\DILI)。"""
+  foldseed=7: F1=0.8180  F3=0.8126  F1-F3=+0.0054  sd(d)=0.0136  paired_95CI=[-0.0065,+0.0174]
+  foldseed=123: F1=0.8016  F3=0.8064  F1-F3=-0.0049  sd(d)=0.0139  paired_95CI=[-0.0171,+0.0073]
+  foldseed=2026: F1=0.8025  F3=0.8105  F1-F3=-0.0080  sd(d)=0.0097  paired_95CI=[-0.0166,+0.0005]

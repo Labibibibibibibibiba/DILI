@@ -1,0 +1,46 @@
+========================================================================
+Step 0 输入核对  (只读 D:\DILI)
+========================================================================
+python: 3.13.14 | D:\DILI_1\.venv\Scripts\python.exe
+numpy: 2.5.3 | sklearn: 1.9.1 | rdkit: 2026.03.6
+
+[0.1] FDA raw shape: (1336, 6)
+[0.1] columns: ['LTKBID', 'CompoundName', 'SeverityClass', 'LabelSection', 'vDILI-Concern', 'Comment']
+[0.1] vDILI-Concern 分布:
+        'vNo-DILI-concern'                  413
+        'Ambiguous-DILI-concern'            354
+        'vLess-DILI-concern'                351
+        'vMost-DILI-concern'                215
+        'vMOST-DILI-concern'                2
+        'vNo-DILI-Concern'                  1
+
+[0.2] y_label_final shape=(556, 1) col='DILI_label'
+        label=0  n=351
+        label=1  n=205
+
+[0.3] y_train n=444 -> {0: 280, 1: 164}
+[0.3] y_test  n=112 -> {0: 71, 1: 41}
+
+[0.4] X_features_final shape=(556, 1031)
+[0.4] FP 列 n=1024  (期望 1024)
+[0.4] 非 FP 列 n=7 -> ['MolecularWeight', 'LogP', 'TPSA', 'HBD', 'HBA', 'RotatableBonds', 'AromaticRings']
+[0.4] 期望总特征 = 1024 + 7 = 1031, 实际 = 1031
+[0.4] FP 列样例: ['FP_0', 'FP_1', 'FP_2'] ... ['FP_1022', 'FP_1023']
+
+[0.5] unknown raw shape=(705, 5) cols=['LTKBID', 'CompoundName', 'SeverityClass', 'LabelSection', 'DILI_category']
+        'Ambiguous-DILI-concern'         354
+        'vLess-DILI-concern'             351
+[0.5] prediction_rank shape=(659, 6) cols=['Rank', 'LTKBID', 'CompoundName', 'DILI_category', 'SMILES', 'DILI_risk_score']
+        'Ambiguous-DILI-concern'         331
+        'vLess-DILI-concern'             328
+[0.5] risk_score: min=0.0608 median=0.4800 max=0.8842
+
+[0.6] X_train=(444, 1031)  X_test=(112, 1031)
+[0.6a] 既有 best_RF_model.pkl  测试集 AUC = 0.8210
+        threshold=0.45: F1=0.7327  CM=[[48, 23], [4, 37]]
+        threshold=0.5: F1=0.6818  CM=[[54, 17], [11, 30]]
+[0.6b] 基线 RF(500) 5-fold CV AUC = 0.7988 ± 0.0432
+        每折: [np.float64(0.7803), np.float64(0.8501), np.float64(0.7879), np.float64(0.7332), np.float64(0.8426)]
+
+========================================================================
+核对完成。errors: 0

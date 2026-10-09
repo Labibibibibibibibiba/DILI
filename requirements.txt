@@ -1,0 +1,20 @@
+# Python 3.13.14 — versions as recorded in data/environment_v2.json
+numpy==2.5.3
+pandas==3.0.6
+scikit-learn==1.9.1
+scipy==1.18.1
+xgboost==3.4.1
+rdkit==2026.3.6
+joblib==1.6.0
+
+# figures
+matplotlib==3.11.2
+pillow==12.3.0
+
+# spreadsheet I/O
+openpyxl==3.1.5
+
+# SHAP attribution (used by main_pipeline/17_SHAP_analysis.py,
+# main_pipeline/21_shap_enrichment_v2.py; installed in the environment
+# that ran the primary pipeline)
+shap

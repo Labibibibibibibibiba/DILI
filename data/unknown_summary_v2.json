@@ -1,0 +1,107 @@
+{
+  "n": 659,
+  "score_mean": 0.46580855395342313,
+  "score_std": 0.14427372362668703,
+  "score_max": 0.868079184704185,
+  "mannwhitney_p": 0.11099263724163612,
+  "vless_mean": 0.47785879314833196,
+  "ambig_mean": 0.45386753142795433,
+  "tail": [
+    {
+      "Top_fraction": "Top 5%",
+      "N": 32,
+      "vLess_count": 24,
+      "Ambiguous_count": 8,
+      "vLess_fraction": 0.75,
+      "Ambiguous_fraction": 0.25,
+      "vLess_enrichment_ratio": 1.506859756097561,
+      "Fisher_p": 0.0035359570293994618,
+      "Odds_ratio": 3.1875,
+      "OR_CI_low": 1.4104179252037783,
+      "OR_CI_high": 7.203649406633891,
+      "boundary_score": 0.6855713834776337,
+      "boundary_drug": "Celecoxib"
+    },
+    {
+      "Top_fraction": "Top 10%",
+      "N": 65,
+      "vLess_count": 38,
+      "Ambiguous_count": 27,
+      "vLess_fraction": 0.5846153846153846,
+      "Ambiguous_fraction": 0.4153846153846154,
+      "vLess_enrichment_ratio": 1.1745778611632272,
+      "Fisher_p": 0.15196474005395516,
+      "Odds_ratio": 1.4753512132822477,
+      "OR_CI_low": 0.8780896576620828,
+      "OR_CI_high": 2.4788598562119155,
+      "boundary_score": 0.6480957341269838,
+      "boundary_drug": "Vortioxetine hydrobromide"
+    },
+    {
+      "Top_fraction": "Top 20%",
+      "N": 131,
+      "vLess_count": 75,
+      "Ambiguous_count": 56,
+      "vLess_fraction": 0.5725190839694656,
+      "Ambiguous_fraction": 0.42748091603053434,
+      "vLess_enrichment_ratio": 1.1502746229752372,
+      "Fisher_p": 0.06359309184591742,
+      "Odds_ratio": 1.4557453416149069,
+      "OR_CI_low": 0.989599724584487,
+      "OR_CI_high": 2.141466339355853,
+      "boundary_score": 0.5943609307359311,
+      "boundary_drug": "Fluorouracil"
+    }
+  ],
+  "validation_drugs": [
+    {
+      "drug": "Chlorpromazine",
+      "matched": "Chlorpromazine hydrochloride",
+      "rank": 3,
+      "score": 0.8026312229437232,
+      "category": "vLess-DILI-concern"
+    },
+    {
+      "drug": "Sulfamethizole",
+      "matched": "Sulfamethizole",
+      "rank": 2,
+      "score": 0.8046990023865019,
+      "category": "vLess-DILI-concern"
+    },
+    {
+      "drug": "Cabotegravir",
+      "matched": "Cabotegravir sodium",
+      "rank": 6,
+      "score": 0.7670386002886002,
+      "category": "Ambiguous-DILI-concern"
+    },
+    {
+      "drug": "Mebendazole",
+      "matched": "Mebendazole",
+      "rank": 10,
+      "score": 0.7416755952380953,
+      "category": "vLess-DILI-concern"
+    },
+    {
+      "drug": "Oxybutynin",
+      "matched": "Oxybutynin chloride",
+      "rank": 526,
+      "score": 0.34267356601731613,
+      "category": "vLess-DILI-concern"
+    },
+    {
+      "drug": "Tolterodine",
+      "matched": "Tolterodine tartrate",
+      "rank": 513,
+      "score": 0.3498730158730161,
+      "category": "vLess-DILI-concern"
+    },
+    {
+      "drug": "Metformin",
+      "matched": "Metformin hydrochloride",
+      "rank": 570,
+      "score": 0.3046236194361195,
+      "category": "vLess-DILI-concern"
+    }
+  ]
+}

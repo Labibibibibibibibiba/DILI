@@ -1,0 +1,10 @@
+{
+  "n_train": 556,
+  "fail_train": 120,
+  "rate_train": 21.58273381294964,
+  "n_unknown": 659,
+  "fail_unknown": 144,
+  "rate_unknown": 21.851289833080425,
+  "n_desc3d": 11,
+  "g2_pass": false
+}

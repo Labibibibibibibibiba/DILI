@@ -1,0 +1,34 @@
+[1] 数据集: (556, 1034)  列示例: ['CompoundName', 'DILI_label', 'SMILES', 'MolecularWeight'] ... ['FP_1022', 'FP_1023']
+    训练集 (444, 1031)  {0: 280, 1: 164}
+    测试集 (112, 1031)  {0: 71, 1: 41}
+    特征数 1031
+    与既有 y_train.xlsx 完全一致: True
+
+[2] 5 折 CV（口径 A = 训练集 444；口径 B = 全 556）
+    LR           [train444] mean=0.7473 ± 0.0378  folds=[0.736, 0.76, 0.712, 0.814, 0.714]
+    RF_baseline  [train444] mean=0.7715 ± 0.0265  folds=[0.745, 0.802, 0.791, 0.785, 0.735]
+    XGB          [train444] mean=0.7496 ± 0.0380  folds=[0.771, 0.805, 0.758, 0.706, 0.709]
+    LR           [full556] mean=0.7664 ± 0.0277  folds=[0.752, 0.725, 0.763, 0.785, 0.806]
+    RF_baseline  [full556] mean=0.7990 ± 0.0535  folds=[0.791, 0.7, 0.826, 0.856, 0.822]
+    XGB          [full556] mean=0.7505 ± 0.0610  folds=[0.734, 0.655, 0.791, 0.837, 0.735]
+
+[3] RF 超参数搜索（训练集内 5 折 CV，scoring=roc_auc, class_weight 固定 balanced）
+    原空间:   best CV AUC=0.7750  params={'n_estimators': 800, 'min_samples_split': 5, 'max_features': 'log2', 'max_depth': None}
+    扩展空间: best CV AUC=0.7750  params={'n_estimators': 800, 'min_samples_split': 5, 'min_samples_leaf': 1, 'max_features': 'log2', 'max_depth': None}
+    既有 pkl 模型测试 AUC（对照）: 0.8210
+
+[4] 训练集 OOF 概率 → 阈值扫描（测试集不参与任何选择）
+    训练集 OOF AUC = 0.7722
+    OOF 最优 F1 阈值 τ* = 0.44  (F1=0.6566)
+    召回≥0.90 条件下 F1 最优阈值 = 0.33
+
+[5] 在完整训练集上拟合最终 RF → 测试集单次评估
+    测试 AUC = 0.8272
+    @τ*=0.44: recall=0.902 spec=0.648 F1=0.718 CM=[[46, 25], [4, 37]]
+    @0.50: recall=0.756 spec=0.746 F1=0.689 CM=[[53, 18], [10, 31]]
+    测试 AUC 95% CI（bootstrap n=2000）= [0.7440, 0.8990]
+
+[6] Scaffold split（Murcko 骨架分组）稳健性检验
+    唯一 Murcko 骨架数 = 388 / 556 化合物
+    scaffold 划分: train=444  test=112  （train 覆盖 276 骨架）
+    scaffold AUC = 0.8191   | 随机划分 AUC(10 次) = 0.8112 ± 0.0465

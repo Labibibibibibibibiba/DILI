@@ -1,0 +1,74 @@
+{
+  "shap_additivity_max_err": 1.0559406682375538e-08,
+  "shap_top_features": [
+    {
+      "Feature": "LogP",
+      "MeanAbsSHAP": 0.015006503741367281
+    },
+    {
+      "Feature": "HBD",
+      "MeanAbsSHAP": 0.010379479205797355
+    },
+    {
+      "Feature": "MolecularWeight",
+      "MeanAbsSHAP": 0.01012634879700842
+    },
+    {
+      "Feature": "TPSA",
+      "MeanAbsSHAP": 0.00988764586758954
+    },
+    {
+      "Feature": "AromaticRings",
+      "MeanAbsSHAP": 0.00973546392613207
+    },
+    {
+      "Feature": "FP_849",
+      "MeanAbsSHAP": 0.00948777852040633
+    },
+    {
+      "Feature": "FP_1",
+      "MeanAbsSHAP": 0.008464160332291006
+    },
+    {
+      "Feature": "FP_356",
+      "MeanAbsSHAP": 0.008092251373956333
+    },
+    {
+      "Feature": "FP_726",
+      "MeanAbsSHAP": 0.008032667744678874
+    },
+    {
+      "Feature": "HBA",
+      "MeanAbsSHAP": 0.007540923653127228
+    }
+  ],
+  "important_bits": [
+    "FP_849",
+    "FP_1",
+    "FP_356",
+    "FP_726",
+    "FP_926",
+    "FP_367",
+    "FP_981",
+    "FP_333",
+    "FP_575",
+    "FP_698",
+    "FP_378",
+    "FP_227",
+    "FP_268",
+    "FP_875",
+    "FP_1019",
+    "FP_593",
+    "FP_464",
+    "FP_561",
+    "FP_90",
+    "FP_9",
+    "FP_41",
+    "FP_807",
+    "FP_993"
+  ],
+  "restricted_family_size": 32,
+  "full_family_size": 541,
+  "full_family_sig_pos": 44,
+  "full_family_sig_neg": 58
+}

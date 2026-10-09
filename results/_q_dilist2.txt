@@ -1,0 +1,6 @@
+DILIst shape (1279, 4)
+cols ['DILIST_ID', 'CompoundName', 'DILIst Classification ', 'Routs of Administration ']
+   DILIST_ID    CompoundName  DILIst Classification  Routs of Administration 
+0          1  mercaptopurine                       1                     Oral
+1          2   acetaminophen                       1                     Oral
+2          3    azathioprine                       1                     Oral

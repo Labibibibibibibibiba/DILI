@@ -1,0 +1,46 @@
+[0] 556 化合物，DILI+ = 205
+
+[1] 全指纹空间富集（fragment := Morgan bit，保留位点身份，count>=5）
+    映射条目 (21338, 4)；唯一 (bit, sub) 对 6760
+    检验族大小 n = 809
+    BH FDR 显著数 = 107；其中 OR>1 = 47，OR<1 = 60
+
+    >>> FP_367 在该族中的结果：
+    Fingerprint Substructure_SMILES  Count  DILI_rate  OddsRatio  OR_CI_low  OR_CI_high  p_value      FDR  Significant
+         FP_367              cc(c)C     29   0.724138   4.893342   2.125659   11.264645 0.000091 0.006703         True
+    其 FDR 在族中排名 = 11 / 809
+
+    该族 FDR 最显著的前 10 个正富集:
+    Fingerprint Substructure_SMILES  Count  DILI_rate  OddsRatio  OR_CI_low  OR_CI_high  p_value      FDR  Significant
+         FP_491                 cNc     16   0.937500  27.631579   3.621866  210.804079 0.000002 0.000983         True
+         FP_698                  Cc     52   0.653846   3.678363   2.018035    6.704716 0.000015 0.002912         True
+           FP_9             cC(c)=O     10   1.000000  37.757033   2.200534  647.839884 0.000040 0.005177         True
+         FP_489                 ncn     13   0.923077  21.761658   2.808252  168.635061 0.000045 0.005177         True
+         FP_896           cccc(c)-c     20   0.800000   7.343915   2.420475   22.282032 0.000078 0.006703         True
+         FP_367              cc(c)C     29   0.724138   4.893342   2.125659   11.264645 0.000091 0.006703         True
+         FP_136             cc(c)-c     34   0.676471   3.906094   1.862307    8.192833 0.000192 0.011961         True
+         FP_325                 cCC      8   1.000000  30.255696   1.736974  527.012459 0.000313 0.012630         True
+         FP_558              nc(n)N      8   1.000000  30.255696   1.736974  527.012459 0.000313 0.012630         True
+         FP_456             cC(=O)O     19   0.789474   6.848684   2.241193   20.928349 0.000311 0.012630         True
+
+[2] 直接 SMARTS 检验（compound-level，556 化合物）
+                              Definition           SMARTS  Count  DILI_rate  OddsRatio  OR_CI_low  OR_CI_high      p_value          FDR  Significant
+           aromatic C with methyl branch         [c][CH3]     61   0.606557   3.000744   1.737593    5.182147 6.920691e-05 3.460346e-04         True
+                   aniline N on aromatic         [c][NX3]    162   0.549383   2.921823   2.002545    4.263102 2.662315e-08 2.662315e-07         True
+                      chloro on aromatic          [c][Cl]     73   0.534247   2.190468   1.332923    3.599720 2.559887e-03 8.532957e-03         True
+                                   nitro      [NX3](=O)=O      0        NaN   1.710462   0.033810   86.534252 1.000000e+00 1.000000e+00        False
+            aromatic ring only (benzene)         c1ccccc1    394   0.403553   1.706198   1.147815    2.536219 8.927999e-03 2.232000e-02         True
+alkyl-substituted aromatic ring (cc(c)C)         [c][CX4]    317   0.381703   1.139152   0.803475    1.615070 4.786718e-01 5.318576e-01        False
+               aromatic C with any alkyl [c][CX4;!$(C=O)]    317   0.381703   1.139152   0.803475    1.615070 4.786718e-01 5.318576e-01        False
+                         carboxylic acid [CX3](=O)[OX2H1]    122   0.327869   0.795270   0.520029    1.216190 3.392015e-01 4.845736e-01        False
+                           primary amide [CX3](=O)[NX3H2]     48   0.270833   0.611310   0.315518    1.184399 1.605550e-01 2.675916e-01        False
+               phenol-like O on aromatic        [c][OX2H]     79   0.265823   0.576555   0.338643    0.981613 4.416349e-02 8.832697e-02        False
+
+[3] 环境特异性对照（FP_367 位点 vs 同类裸 SMARTS）
+                           Definition  Count  DILI_positive  DILI_negative  DILI_rate  OddsRatio  OR_CI_low  OR_CI_high  p_value
+        Morgan bit FP_367 environment     41             28             13   0.682927   4.112994   2.078554    8.138697 0.000031
+bare SMARTS [c][CX4] (any alkyl-aryl)    317            121            196   0.381703   1.139152   0.803475    1.615070 0.478672
+     intersection (bit367 AND SMARTS)     37             26             11   0.702703   4.489589   2.168252    9.296153 0.000026
+       SMARTS carriers WITHOUT bit367    280             95            185   0.339286   0.774939   0.548633    1.094592 0.159943
+
+    解读：若「裸 SMARTS」OR 远低于「FP_367 环境」，说明富集来自具体化学环境而非泛化骨架。

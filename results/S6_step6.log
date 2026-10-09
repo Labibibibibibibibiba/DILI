@@ -1,0 +1,33 @@
+========================================================================
+Step 6 — Part D PHH 湿实验候选清单
+========================================================================
+
+[6.1] 载入打分表 (659, 11), 模型列 7
+[6.2] DILI_PHH_阴性对照面板.xlsx: 7 行, 列 = ['角色', '药物', '数据集标签', '模型风险评分', '模型百分位', '数据集排名', '选择依据', '建议测试浓度(µM)']
+[6.2]   使用列 '药物', 收集 7 个名称
+[6.2] DILI_对照药面板_建议V2.2.xlsx: 13 行, 列 = ['层级 / 角色', '药物', '池内 / 池外', 'DILIrank 标签', '模型 score', '百分位', '建议 Cmax (µM)', '建议浓度梯度 (µM)', '机制', '外部背书', '关键备注']
+[6.2]   使用列 '药物', 收集 13 个名称
+[6.2] 已知对照药 20 个: ['Buspirone', 'Buspirone hydrochloride', 'Buthionine sulfoximine (BSO)', 'Cabotegravir sodium', 'Chlorpromazine (CPZ)', 'Chlorpromazine hydrochloride', 'DMSO', 'Diclofenac', 'Diclofenac(如可及)', 'Entacapone', 'Imipramine hydrochloride', 'Mebendazole (MBZ)']
+
+[6.3] Discordant 池 n=205
+[6.4] 组合面板 16 个
+             CompoundName DILI_category                 role  n_high  is_known_ctrl
+      Amlodipine besylate         vLess       Discordant(主攻)     1.0          False
+Vortioxetine hydrobromide         vLess       Discordant(主攻)     4.0          False
+               Zonisamide         vLess       Discordant(主攻)     3.0          False
+               Vigabatrin     Ambiguous       Discordant(主攻)     1.0          False
+              Plecanatide     Ambiguous       Discordant(主攻)     1.0          False
+                Peramivir     Ambiguous       Discordant(主攻)     1.0          False
+             Pyrazinamide         vLess       Discordant(主攻)     2.0          False
+               Tinidazole         vLess       Discordant(主攻)     2.0          False
+        Degarelix acetate     Ambiguous       Discordant(主攻)     1.0          False
+            Pyrimethamine         vLess       Discordant(主攻)     5.0          False
+             Sulfadiazine         vLess Consensus_HIGH(阳性锚点)     6.0          False
+              Mebendazole         vLess Consensus_HIGH(阳性锚点)     6.0          False
+                  Dapsone         vLess Consensus_HIGH(阳性锚点)     6.0          False
+  Eletriptan hydrobromide     Ambiguous  Consensus_LOW(阴性锚点)     0.0          False
+           Selenious acid     Ambiguous  Consensus_LOW(阴性锚点)     0.0          False
+ Mefloquine hydrochloride         vLess  Consensus_LOW(阴性锚点)     0.0          False
+
+[6.5] 候选清单 -> out/S6_wetlab_candidates.xlsx  (16 行)
+[6.6] 理由文档 -> out/S6_wetlab_rationale.md

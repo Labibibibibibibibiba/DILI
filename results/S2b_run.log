@@ -1,0 +1,4 @@
+D:\DILI_1\_scripts\S2b_features3d_fix.py:3: SyntaxWarning: invalid escape sequence '\D'
+  Step 2b — 3D 嵌入失败根因诊断与补救尝试 (只读 D:\DILI)
+D:\DILI_1\_scripts\dili_common.py:2: SyntaxWarning: invalid escape sequence '\D'
+  """共享数据加载器 — 所有后续步骤 import 本模块, 保证 split / 路径一致(只读 D:\DILI)。"""

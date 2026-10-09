@@ -1,0 +1,4 @@
+D:\DILI_1\_scripts\dili_common.py:2: SyntaxWarning: invalid escape sequence '\D'
+  """共享数据加载器 — 所有后续步骤 import 本模块, 保证 split / 路径一致(只读 D:\DILI)。"""
+主模型 pkl 特征数: 1031  输入列数: 1031
+v2 主模型测试 AUC = 0.8272

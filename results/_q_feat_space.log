@@ -1,0 +1,55 @@
+[表结构] 列数=1034  列名前8=['CompoundName', 'DILI_label', 'SMILES', 'MolecularWeight', 'LogP', 'TPSA', 'HBD', 'HBA']
+  SMILES 在表中: True
+  FP 列缺失数: 0
+  DESC 列: ['MolecularWeight', 'LogP', 'TPSA', 'HBD', 'HBA', 'RotatableBonds', 'AromaticRings']
+  标签: Most 205 / No 351  n=556
+
+[1] 原始尺度与方差 (未标准化)
+  MolecularWeight    min=    18.02 max=   7053.95 mean=  520.20 sd= 594.625
+  LogP               min=   -42.33 max=      9.58 mean=    1.11 sd=   5.137
+  TPSA               min=     0.00 max=   2912.95 mean=  149.63 sd= 255.629
+  HBD                min=     0.00 max=    100.00 mean=    3.95 sd=   8.831
+  HBA                min=     0.00 max=     99.00 mean=    7.16 sd=   9.136
+  RotatableBonds     min=     0.00 max=    159.00 mean=    8.81 sd=  16.959
+  AromaticRings      min=     0.00 max=     12.00 mean=    1.83 sd=   1.475
+  FP_all             min=0.0 max=1.0 mean=0.0458 sd=0.0819
+  FP 每 bit 出现率的分布: min=0.0018 中位=0.0252 max=0.8561
+  出现率>0.5 的 bit 数: 8 / 1024
+  出现率<0.01 的 bit 数: 118 / 1024
+
+[2] LR: 未标准化 vs 标准化 (检验 '唯一增益是尺度' 假说)
+  LR  Morgan(原始,均0-1)                AUC 0.7601 ± 0.0324
+  LR  Morgan+7desc(原始)               AUC 0.7662 ± 0.0309
+  LR  仅7desc(原始)                     AUC 0.7117 ± 0.0673
+  LR  Morgan(标准化)                    AUC 0.7592 ± 0.0219
+  LR  Morgan+7desc(标准化)              AUC 0.7613 ± 0.0234
+  LR  仅7desc(标准化)                    AUC 0.7054 ± 0.0788
+
+[3] 描述符能否由 bit 子集线性重建 (R^2, 岭回归)
+  MolecularWeight    R^2 =  0.857
+  LogP               R^2 =  0.640
+  TPSA               R^2 =  0.875
+  HBD                R^2 =  0.888
+  HBA                R^2 =  0.822
+  RotatableBonds     R^2 =  0.879
+  AromaticRings      R^2 =  0.665
+
+[4] 特征块重要性 (RF 内置 importance, F3 空间)
+  bit 块总重要性 = 0.8622   7desc 块总重要性 = 0.1378
+  7 描述符各自重要性 (按降序):
+LogP               0.032165
+TPSA               0.024327
+MolecularWeight    0.021583
+HBD                0.018091
+AromaticRings      0.014872
+RotatableBonds     0.013437
+HBA                0.013338
+
+[5] 描述符单独的相关性 (打分方向)
+  MolecularWeight    Most中位=  351.32 No中位=  408.88  P=2.28e-03
+  LogP               Most中位=    3.14 No中位=    1.61  P=1.16e-09
+  TPSA               Most中位=   77.43 No中位=   99.77  P=4.30e-04
+  HBD                Most中位=    2.00 No中位=    2.00  P=2.85e-04
+  HBA                Most中位=    4.00 No中位=    5.00  P=1.81e-03
+  RotatableBonds     Most中位=    4.00 No中位=    5.00  P=4.46e-03
+  AromaticRings      Most中位=    2.00 No中位=    2.00  P=2.25e-05

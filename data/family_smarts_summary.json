@@ -1,0 +1,20 @@
+{
+  "full_family_bitidentity_size": 809,
+  "full_family_sig": 107,
+  "fp367_row": [
+    {
+      "Fingerprint": "FP_367",
+      "Substructure_SMILES": "cc(c)C",
+      "Count": 29,
+      "DILI_positive": 21,
+      "DILI_negative": 8,
+      "DILI_rate": 0.7241379310344828,
+      "OddsRatio": 4.893342391304348,
+      "OR_CI_low": 2.125659462363021,
+      "OR_CI_high": 11.264645246570943,
+      "p_value": 9.113942646152252e-05,
+      "FDR": 0.006702890546124702,
+      "Significant": true
+    }
+  ]
+}

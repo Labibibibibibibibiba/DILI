@@ -1,0 +1,48 @@
+D:\DILI_1\_scripts\dili_common.py:2: SyntaxWarning: invalid escape sequence '\D'
+  """共享数据加载器 — 所有后续步骤 import 本模块, 保证 split / 路径一致(只读 D:\DILI)。"""
+========================================================================
+Step 3 — Part A 标签编码敏感性分析
+========================================================================
+
+[3.1] 训练集 Most/No: (556, 1035)  类别 {'vNo': 351, 'vMost': 205}
+      unknown Less/Amb: (659, 1034)  类别 {'Ambiguous': 331, 'vLess': 328}
+      合并总表: (1215, 1035)
+
+[3.2] L1 split: train 444 / test 112  (pos 164/41)
+
+[3.3] L1  Most=1 / No=0  (n=556)
+      L1 RF                  AUC 0.8046 ± 0.0564  95%CI [0.7552, 0.8541]  F1 0.6522
+
+[3.4] L2  (Most+Less)=1 / (No)=0   [Ambiguous 单列不入训练]
+      n=884  正 533 / 负 351
+      L2 RF                  AUC 0.7797 ± 0.0357  95%CI [0.7484, 0.8110]  F1 0.7798
+
+[3.5] L3  序数 Most=2 / Less=1 / No=0  (3类, Ambiguous 剔除)
+      n=884  类别 {0: 351, 1: 328, 2: 205}
+      L3 RF (P_Most)         AUC 0.7699 ± 0.0749  95%CI [0.7043, 0.8355]  
+      L3 Spearman(Most vs No) rho = 0.4562
+
+[3.6] L4  4类名义 (Most/Less/No/Amb) + 折叠权重扫描
+      n=1215  类别 {0: 205, 1: 328, 2: 351, 3: 331}
+      折叠扫描 66 组合; 最优 Top5:
+ lam_less  mu_amb  auc_most_vs_no
+      0.7     0.6        0.817143
+      0.6     0.5        0.816941
+      0.7     0.5        0.816232
+      0.6     0.4        0.816059
+      0.6     0.6        0.815774
+      L4 最优: λ(Less)=0.7  μ(Amb)=0.6  AUC=0.8171
+
+[3.7] L4 副产品: 331 Ambiguous 药的分布定位
+      Ambiguous 平均 P(Less)=0.2598  P(No)=0.2642
+      参考: 真 vLess 平均 P(Less)=0.3244; 真 vNo 平均 P(No)=0.3801
+      Ambiguous argmax 分布: {'Amb': 114, 'No': 87, 'Less': 76, 'Most': 54}
+
+[3.8] 汇总表 -> out/S3_label_sensitivity.csv
+ scheme      algo   n  n_pos  auc_mean   auc_sd    ci_lo    ci_hi  f1_mean
+     L1        RF 556    205  0.804626 0.056408 0.755183 0.854070 0.652205
+     L2        RF 884    533  0.779669 0.035725 0.748355 0.810983 0.779786
+     L3 RF-3class 884    205  0.769914 0.074880 0.704278 0.835549      NaN
+L4-best RF-4class 556    205  0.817143      NaN      NaN      NaN      NaN
+
+Step 3 完成。

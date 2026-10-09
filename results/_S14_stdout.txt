@@ -1,0 +1,14 @@
+D:\DILI_1\_scripts\dili_common.py:2: SyntaxWarning: invalid escape sequence '\D'
+  """共享数据加载器 — 所有后续步骤 import 本模块, 保证 split / 路径一致(只读 D:\DILI)。"""
+========================================================================
+S14 — condensed supplementary figures + modified Figure 3
+========================================================================
+Saved: FigS1_consistency [pdf, png] @ 600 dpi
+[S1] FigS1_consistency
+Saved: FigS2_sensitivity [pdf, png] @ 600 dpi
+[S2] FigS2_sensitivity
+Saved: Figure3_v2 [pdf, png] @ 600 dpi
+[Fig3] Figure3_v2 (with rank-range annotation in panel D)
+[Fig3] Figure3_original (unmodified reference copy)
+
+S14 完成。

@@ -1,0 +1,17 @@
+{
+  "python": "3.13.14",
+  "numpy": "2.5.3",
+  "pandas": "3.0.6",
+  "scikit-learn": "1.9.1",
+  "scipy": "1.18.1",
+  "xgboost": "3.4.1",
+  "rdkit": "2026.03.6",
+  "joblib": "1.6.0",
+  "seeds": {
+    "split": 42,
+    "cv": 42,
+    "tuning": 42,
+    "scaffold": 42,
+    "bootstrap": 20261003
+  }
+}

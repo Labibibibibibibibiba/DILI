@@ -1,0 +1,25 @@
+[1] DILIst 1279 药 → 外部子集 (与训练集无重叠) 876 药；阳性 585 / 阴性 291
+[2] PubChem 查询：缓存 876，待查 0
+    成功解析 771 / 876；其中阳性 543 / 阴性 228
+    RDKit 可解析 771 / 771
+    最终外部检验集 n = 771（阳性 543 / 阴性 228）
+
+[3] 外部验证结果（DILIst 独立子集）:
+                               Definition            Type  Count  DILI_rate  OddsRatio  OR_CI_low  OR_CI_high  p_value      FDR  Significant
+           Morgan bit FP_367 (cc(c)C env) fingerprint_bit     35   0.771429   1.438953   0.643593    3.217229 0.450988 0.812106        False
+                carboxylic acid (control)          smarts    168   0.738095   1.237579   0.841989    1.819027 0.294326 0.812106        False
+           benzene ring (generic control)          smarts    528   0.717803   1.225282   0.882128    1.701926 0.235037 0.812106        False
+                        Morgan bit FP_356 fingerprint_bit    694   0.707493   1.162846   0.702296    1.925414 0.598820 0.812106        False
+                        Morgan bit FP_849 fingerprint_bit    659   0.708649   1.152138   0.748960    1.772354 0.504296 0.812106        False
+                            aryl chloride          smarts    105   0.723810   1.116739   0.705788    1.766971 0.730118 0.812106        False
+            aromatic C with methyl branch          smarts     77   0.714286   1.055328   0.627061    1.776091 0.895889 0.895889        False
+               aniline N on aromatic ring          smarts    230   0.695652   0.942932   0.673502    1.320145 0.730896 0.812106        False
+               Morgan bit FP_981 (CN env) fingerprint_bit     31   0.677419   0.877011   0.406286    1.893125 0.693526 0.812106        False
+alkyl-substituted aromatic ring (generic)          smarts    414   0.683575   0.805960   0.590009    1.100952 0.179504 0.812106        False
+
+[4] 内部 vs 外部并列表:
+    definition                              inner OR  extern OR         extern 95%CI   extern p  exterFDR
+    FP_367 env (train 556)                     4.893   (外部未匹配)
+    [c][CH3] (train 556)                       3.001   (外部未匹配)
+    [c][NX3] (train 556)                       2.922   (外部未匹配)
+    [c][CX4] (train 556)                       1.139   (外部未匹配)

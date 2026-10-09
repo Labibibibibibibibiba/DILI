@@ -1,0 +1,54 @@
+{
+  "errors": [],
+  "fda_categories": {
+    "vNo-DILI-concern": 413,
+    "Ambiguous-DILI-concern": 354,
+    "vLess-DILI-concern": 351,
+    "vMost-DILI-concern": 215,
+    "vMOST-DILI-concern": 2,
+    "vNo-DILI-Concern": 1
+  },
+  "fda_total": 1336,
+  "y_final": {
+    "0": 351,
+    "1": 205
+  },
+  "n_final": 556,
+  "train": {
+    "0": 280,
+    "1": 164
+  },
+  "test": {
+    "0": 71,
+    "1": 41
+  },
+  "n_train": 444,
+  "n_test": 112,
+  "n_fp_cols": 1024,
+  "desc_cols": [
+    "MolecularWeight",
+    "LogP",
+    "TPSA",
+    "HBD",
+    "HBA",
+    "RotatableBonds",
+    "AromaticRings"
+  ],
+  "n_features": 1031,
+  "unknown_raw": {
+    "Ambiguous-DILI-concern": 354,
+    "vLess-DILI-concern": 351
+  },
+  "unknown_scored": {
+    "Ambiguous-DILI-concern": 331,
+    "vLess-DILI-concern": 328
+  },
+  "risk_score_range": [
+    0.06078968253968253,
+    0.4800054112554111,
+    0.8841569985569988
+  ],
+  "baseline_pkl_auc": 0.8210237031947784,
+  "baseline_cv_auc_mean": 0.798829816017316,
+  "baseline_cv_auc_std": 0.04316345678057506
+}

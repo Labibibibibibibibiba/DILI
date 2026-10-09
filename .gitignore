@@ -1,0 +1,33 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# ---- virtual environments ----
+.venv/
+venv/
+env/
+
+# ---- known-erroneous / deprecated artifacts (must never be published) ----
+_BUGGY_backup_*
+*BUGGY*
+*_deprecated.*
+*deprecated*
+
+# ---- scratch ----
+test-*.py
+test_*.py
+scratch*
+tmp*
+*.bak
+
+# ---- caches / logs ----
+cache/
+*.log.bak
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

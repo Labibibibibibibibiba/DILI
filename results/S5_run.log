@@ -1,0 +1,79 @@
+D:\DILI_1\_scripts\dili_common.py:2: SyntaxWarning: invalid escape sequence '\D'
+  """共享数据加载器 — 所有后续步骤 import 本模块, 保证 split / 路径一致(只读 D:\DILI)。"""
+========================================================================
+Step 5 — Part C 跨模型高风险药物集合比较
+========================================================================
+
+[5.1] 训练 (444, 1031) / 测试 (112, 1031)
+[5.2] 候选池 (659, 1031)  类别 {'Ambiguous': 331, 'vLess': 328}
+[5.3] 3D 特征: train (556, 11) / cand (659, 11)  (缺失列 0 / 0)
+[5.4] L1_F1_A1     RF / Morgan only               n_feat= 1024  score [0.0200, 0.9240]
+[5.4] L1_F3_A1     RF / Morgan+2D (既有基线)          n_feat= 1031  score [0.0140, 0.9200]
+[5.4] L1_F2_A1     RF / 2D desc only              n_feat=    7  score [0.0140, 0.9640]
+[5.4] L1_F3_A2     XGBoost / Morgan+2D            n_feat= 1031  score [0.0021, 0.9884]
+[5.4] L1_F3_A3     LogReg / Morgan+2D             n_feat= 1031  score [0.0000, 0.9995]
+[5.4] L1_F4_A1     RF / 3D only                   n_feat=   11  score [0.0020, 0.9300]
+[5.4] L1_F5_A1     RF / 2D+3D                     n_feat= 1042  score [0.0560, 0.8380]
+
+[5.5] 模型两两排序一致性
+      Spearman ρ:
+          L1_F1_A1  L1_F3_A1  L1_F2_A1  L1_F3_A2  L1_F3_A3  L1_F4_A1  L1_F5_A1
+L1_F1_A1    1.0000    0.9364    0.6145    0.8181    0.7948   -0.0128    0.8447
+L1_F3_A1    0.9364    1.0000    0.7159    0.8441    0.7958    0.0005    0.9039
+L1_F2_A1    0.6145    0.7159    1.0000    0.6745    0.5040    0.0301    0.6762
+L1_F3_A2    0.8181    0.8441    0.6745    1.0000    0.7772   -0.0114    0.7759
+L1_F3_A3    0.7948    0.7958    0.5040    0.7772    1.0000   -0.0576    0.7280
+L1_F4_A1   -0.0128    0.0005    0.0301   -0.0114   -0.0576    1.0000    0.2122
+L1_F5_A1    0.8447    0.9039    0.6762    0.7759    0.7280    0.2122    1.0000
+
+[5.6] Top-5% 集合 Jaccard
+          L1_F1_A1  L1_F3_A1  L1_F2_A1  L1_F3_A2  L1_F3_A3  L1_F4_A1  L1_F5_A1
+L1_F1_A1     1.000     0.545     0.172     0.333     0.236     0.030     0.388
+L1_F3_A1     0.545     1.000     0.222     0.320     0.200     0.047     0.404
+L1_F2_A1     0.172     0.222     1.000     0.158     0.119     0.063     0.179
+L1_F3_A2     0.333     0.320     0.158     1.000     0.222     0.047     0.245
+L1_F3_A3     0.236     0.200     0.119     0.222     1.000     0.000     0.245
+L1_F4_A1     0.030     0.047     0.063     0.047     0.000     1.000     0.047
+L1_F5_A1     0.388     0.404     0.179     0.245     0.245     0.047     1.000
+      分层(阈值: HIGH≥6票, 全票数=0): {'Consensus_LOW': 532, 'Discordant': 123, 'Consensus_HIGH': 4}
+
+[5.6] Top-10% 集合 Jaccard
+          L1_F1_A1  L1_F3_A1  L1_F2_A1  L1_F3_A2  L1_F3_A3  L1_F4_A1  L1_F5_A1
+L1_F1_A1     1.000     0.583     0.200     0.389     0.282     0.056     0.430
+L1_F3_A1     0.583     1.000     0.255     0.371     0.291     0.056     0.426
+L1_F2_A1     0.200     0.255     1.000     0.211     0.109     0.091     0.209
+L1_F3_A2     0.389     0.371     0.211     1.000     0.333     0.065     0.291
+L1_F3_A3     0.282     0.291     0.109     0.333     1.000     0.023     0.243
+L1_F4_A1     0.056     0.056     0.091     0.065     0.023     1.000     0.099
+L1_F5_A1     0.430     0.426     0.209     0.291     0.243     0.099     1.000
+      分层(阈值: HIGH≥6票, 全票数=0): {'Consensus_LOW': 443, 'Discordant': 205, 'Consensus_HIGH': 11}
+
+[5.7] 共识分层汇总:
+         layer   n  n_vLess  n_amb  mean_n_high
+Consensus_HIGH  11       10      1     6.000000
+ Consensus_LOW 443      215    228     0.000000
+    Discordant 205      103    102     1.941463
+
+========================================================================
+[G4] Discordant 集合 n = 205   (要求 ≥15)
+[G4] 判定: 通过
+
+[5.8] Discordant 按 score_sd 排序 Top-15:
+             CompoundName DILI_category  score_sd  n_high
+      Amlodipine besylate         vLess  0.319421     1.0
+Vortioxetine hydrobromide         vLess  0.307930     4.0
+               Zonisamide         vLess  0.297339     3.0
+               Vigabatrin     Ambiguous  0.294851     1.0
+              Plecanatide     Ambiguous  0.293911     1.0
+                Peramivir     Ambiguous  0.288801     1.0
+             Pyrazinamide         vLess  0.286829     2.0
+               Tinidazole         vLess  0.285468     2.0
+        Degarelix acetate     Ambiguous  0.281820     1.0
+            Pyrimethamine         vLess  0.277695     5.0
+                 Cefaclor         vLess  0.277083     1.0
+     Delavirdine mesylate     Ambiguous  0.275610     1.0
+                Tucatinib     Ambiguous  0.275338     4.0
+    Bremelanotide acetate     Ambiguous  0.275169     1.0
+              Vemurafenib         vLess  0.273505     2.0
+
+Step 5 完成。
